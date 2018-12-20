@@ -1,0 +1,183 @@
+
+$small_media: 320px
+$medium_media: 768px
+$big_media: 1024px
+
+@media screen and (min-width: $big_media) and (max-width: 1400px)
+  main .container .titleItems .block .hidden i
+    padding: 5px
+
+@media screen and (min-width: $big_media)
+  header
+    .container-fluid
+      .row
+        .navbar_wrapper
+          display: flex
+        nav.navbar-expand-lg
+          display: none
+
+@media screen and (max-width: $big_media)
+  header
+    .container-fluid
+      .row
+        .navbar_wrapper
+          display: none
+        .navbar-dark
+          display: flex
+          position: fixed
+          z-index: 50
+          background: #fff
+          .fa
+            left: -40px
+            position: relative
+          .navbar-brand
+            font-size: 30px
+            font-family: "BEYNO", serif
+            color: #503392
+            span
+              color: #009dda
+          .navbar-nav
+            font-family: "Lato", serif
+            .nav-link
+              color: #333
+              font-size: 16px
+          .bg-dark
+            background-color: #615794!important
+          .form-inline
+            .form-control
+              background: #e8e4f1
+              border: 0
+              -webkit-border-radius: 0
+              -moz-border-radius: 0
+              border-radius: 0
+
+    .slider_box
+      .slider
+        .slide_viewer
+          .slide_group
+            .slide
+              .slideTitle
+                h2
+                  padding-top: 100px
+                  font-size: 55px
+  main
+    .container
+      .section2
+      .titleItems
+        .block
+          width: 90%
+          margin-top: 10px
+          .hidden
+            .wrapper
+              margin-left: 0
+              justify-content: center
+              width: 97%
+            i
+              width: 13%
+      .row
+        .wrap_ipad
+          padding: 0
+          img
+            width: 90%
+    .container-fluid
+      .second_slider
+        .slider1
+          .slide_viewer
+            .slide_group1
+              .slide1
+                width: initial
+                .qq
+                  .wrap
+                    padding-top: 0
+                  .image
+                    img
+                      width: 100px
+                  margin-top: 10px
+                  .d-flex
+                    flex-flow: wrap
+
+  footer
+    .container-fluid
+      margin-top: 50px
+      .map_wrapper
+        .contact_wrap
+          flex-direction: column
+          width: 90%
+          height: 425px
+          .inputs
+            button
+              right: 15px
+            padding: 15px
+            width: 100%
+            input
+              width: 100%!important
+              &:nth-of-type(1)
+                margin-top: 10px
+              &:nth-of-type(2)
+                margin-left: 0
+                margin-top: 10px
+          .contact_info
+            display: none
+      .smallFooter
+        p
+          display: none
+        .social
+          justify-content: space-around!important
+          width: 100%
+
+@media screen and (max-width: 575px)
+  header .container-fluid .row .navbar-dark .fa
+    position: relative
+    top: -27px
+    width: 97%
+    text-align: right
+    left: 0!important
+  main .container-fluid .second_slider .title
+    h2
+      padding: 5px
+    height: 72px
+    margin-top: 50px
+
+@media screen and (max-width: 1150px)
+  header
+    .container-fluid
+      .row
+        .navbar_wrapper
+          .navbar
+            .primary_nav_wrap
+              ul
+                li
+                  margin-left: 9px
+
+@media screen and (min-width: 576px) and (max-width: $medium_media)
+  header .slider_box .slider .slide_viewer .slide_group .slide .slideTitle
+    p
+      margin: 0 auto
+    h2
+      padding-top: 200px
+  main .container .titleItems .block
+    width: 47%
+    margin-right: 10px
+  main .container-fluid .second_slider .title h2
+    padding: 15px 0
+  main .container-fluid .second_slider .slider1 .slide_viewer .slide_group1 .slide1 .qq
+    width: 90%
+  footer .container-fluid .map_wrapper .contact_wrap
+    height: unset
+  footer .container-fluid .smallFooter .social
+    width: 30%
+  footer .container-fluid .smallFooter p
+    display: block
+
+
+@media screen and (min-width: $medium_media) and (max-width: $big_media)
+  footer .container-fluid .smallFooter .social
+    width: 30%
+  footer .container-fluid .smallFooter p
+    display: block
+  main .container-fluid .second_slider .title h2
+    padding: 15px 0
+  main .container .titleItems .block .hidden i
+    width: 30%
+  header .slider_box .slider .slide_viewer .slide_group .slide .slideTitle h2
+    padding-top: 200px
